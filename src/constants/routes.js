@@ -1,3 +1,3 @@
-export const ORGANIZATION = '/';
+export const ORGANIZATION = '/organinzation';
 export const PROFILE = '/profile';
-export const TIMELINE = '/timeline';
+export const TIMELINE = '/';

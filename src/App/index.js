@@ -9,7 +9,6 @@ import Organization from '../Organization';
 import * as routes from '../constants/routes';
 
 import './style.css';
-import TimeLine from "../TimeLine";
 import TimeLineProfile from "../TimeLineProfile";
 
 class App extends Component {
