@@ -14,6 +14,9 @@ const Navigation = ({
 }) => (
   <header className="Navigation">
     <div className="Navigation-link">
+      <Link to={routes.TIMELINE}>TimeLine</Link>
+    </div>
+    <div className="Navigation-link">
       <Link to={routes.PROFILE}>Profile</Link>
     </div>
     <div className="Navigation-link">

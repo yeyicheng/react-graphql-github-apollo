@@ -9,6 +9,8 @@ import Organization from '../Organization';
 import * as routes from '../constants/routes';
 
 import './style.css';
+import TimeLine from "../TimeLine";
+import TimeLineProfile from "../TimeLineProfile";
 
 class App extends Component {
   state = {
@@ -49,6 +51,15 @@ class App extends Component {
                 </div>
               )}
             />
+              <Route
+                  exact
+                  path={routes.TIMELINE}
+                  component={() => (
+                      <div className="App-content_small-header">
+                          <TimeLineProfile />
+                      </div>
+                  )}
+              />
           </div>
 
           <Footer />
