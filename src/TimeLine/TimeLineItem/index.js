@@ -12,7 +12,7 @@ const TimeLineItem = (props) => {
                     {props.name}
                 </span>
                 {
-                    props.isPrivate? <></>: <a href={props.url} style={{marginLeft: '.75rem'}}>Click me!</a>
+                    props.isPrivate? <></>: <a href={props.url} style={{marginLeft: '.75rem', fontSize: '1vw'}}>Click me!</a>
                 }
             </div>
             <div className="desc">{(props.primaryLanguage || {}).name}</div>
