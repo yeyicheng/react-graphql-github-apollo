@@ -19,9 +19,9 @@ const Navigation = ({
     <div className="Navigation-link">
       <Link to={routes.PROFILE}>Profile</Link>
     </div>
-    <div className="Navigation-link">
-      <Link to={routes.ORGANIZATION}>Organization</Link>
-    </div>
+    {/*<div className="Navigation-link">*/}
+    {/*  <Link to={routes.ORGANIZATION}>Organization</Link>*/}
+    {/*</div>*/}
 
     {pathname === routes.ORGANIZATION && (
       <OrganizationSearch
