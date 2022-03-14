@@ -23,12 +23,12 @@ const Navigation = ({
     {/*  <Link to={routes.ORGANIZATION}>Organization</Link>*/}
     {/*</div>*/}
 
-    {pathname === routes.ORGANIZATION && (
-      <OrganizationSearch
-        organizationName={organizationName}
-        onOrganizationSearch={onOrganizationSearch}
-      />
-    )}
+    {/*{pathname === routes.ORGANIZATION && (*/}
+    {/*  <OrganizationSearch*/}
+    {/*    organizationName={organizationName}*/}
+    {/*    onOrganizationSearch={onOrganizationSearch}*/}
+    {/*  />*/}
+    {/*)}*/}
   </header>
 );
 
