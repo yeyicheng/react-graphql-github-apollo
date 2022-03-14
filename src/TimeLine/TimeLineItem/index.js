@@ -7,12 +7,15 @@ const TimeLineItem = (props) => {
             <span className="time-wrapper"><span className="time">{props.createdAt.split('T')[0]}</span></span>
         </div>
         <div className="direction-r">
-            <div className="flag-wrapper">
+            <div className="flag-wrapper" style={{display: 'flex', alignItems: 'center'}}>
                 <span className="flag">
                     {props.name}
                 </span>
+                {
+                    props.isPrivate? <></>: <a href={props.url} style={{marginLeft: '.75rem'}}>Click me!</a>
+                }
             </div>
-            <div className="desc">My current employment. Way better than the position before!</div>
+            <div className="desc">{(props.primaryLanguage || {}).name}</div>
         </div>
     </li>)
 }

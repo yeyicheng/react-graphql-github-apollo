@@ -6,6 +6,7 @@ const REPOSITORY_FRAGMENT = gql`
     name
     createdAt
     url
+    isPrivate
     descriptionHTML
     primaryLanguage {
       name
