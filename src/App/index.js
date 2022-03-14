@@ -33,6 +33,15 @@ class App extends Component {
           />
 
           <div className="App-main">
+              <Route
+                  exact
+                  path={routes.TIMELINE}
+                  component={() => (
+                      <div className="App-content_small-header">
+                          <TimeLineProfile />
+                      </div>
+                  )}
+              />
             <Route
               exact
               path={routes.ORGANIZATION}
@@ -51,15 +60,6 @@ class App extends Component {
                 </div>
               )}
             />
-              <Route
-                  exact
-                  path={routes.TIMELINE}
-                  component={() => (
-                      <div className="App-content_small-header">
-                          <TimeLineProfile />
-                      </div>
-                  )}
-              />
           </div>
 
           <Footer />

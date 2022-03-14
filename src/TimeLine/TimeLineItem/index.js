@@ -16,6 +16,7 @@ const TimeLineItem = (props) => {
                 }
             </div>
             <div className="desc">{(props.primaryLanguage || {}).name}</div>
+            <div className="desc" dangerouslySetInnerHTML={{__html: props.descriptionHTML}}/>
         </div>
     </li>)
 }
